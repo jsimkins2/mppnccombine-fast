@@ -38,6 +38,9 @@ Use like
 
     mpirun -n 2 mppnccombine-fast --output out.nc input.nc.0000 input.nc.0001 input.nc.0002
 
+    mpirun -n 10 /t5/workdir/cermak/local/bin/mppnccombine-fast --output out2.nc 20100105.ocean_5day.nc.0000 20100105.ocean_5day.nc.0001 20100105.ocean_5day.nc.0002 20100105.ocean_5day.nc.0003
+
+
 Files will be collated along all axes with a `domain_distribution` attribute
 
 At least 2 MPI ranks need to be used (rank 0 writes the output file, other
