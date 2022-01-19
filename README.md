@@ -38,6 +38,8 @@ Use like
 
     mpirun -n 2 mppnccombine-fast --output out.nc input.nc.0000 input.nc.0001 input.nc.0002
 
+    # triton use
+    module load netcdf
     mpirun -n 10 /t5/workdir/cermak/local/bin/mppnccombine-fast --output out2.nc 20100105.ocean_5day.nc.0000 20100105.ocean_5day.nc.0001 20100105.ocean_5day.nc.0002 20100105.ocean_5day.nc.0003
 
 
